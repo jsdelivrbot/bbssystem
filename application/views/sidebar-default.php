@@ -21,6 +21,7 @@ if ($this->session->userdata("role") == "Admin") {
             <li><a class="treeview-item" href="' . base_url() . 'index.php/admin/allprojects"><i class="icon fa fa-circle-o"></i>All Projects</a></li>
             <li><a class="treeview-item" href="' . base_url() . 'index.php/admin/projecthistory"><i class="icon fa fa-circle-o"></i>Project History</a></li>
             <li><a class="treeview-item" href="' . base_url() . 'index.php/admin/bonussettings"><i class="icon fa fa-circle-o"></i>Bonus Settings</a></li>
+            <li><a class="treeview-item" href="' . base_url() . 'index.php/questions/index"><i class="icon fa fa-circle-o"></i>Forum</a></li>
           </ul>
         </li>';
 }
@@ -29,6 +30,7 @@ elseif ($this->session->userdata("role") == "User"){
           <ul class="treeview-menu">
             <li><a class="treeview-item" href="' . base_url() . 'index.php/user/mytransactions"><i class="icon fa fa-circle-o"></i>My Transactions</a></li>
             <li><a class="treeview-item" href="' . base_url() . 'index.php/user/userwallet"><i class="icon fa fa-circle-o"></i>User Wallet</a></li>
+            <li><a class="treeview-item" href="' . base_url() . 'index.php/questions/index"><i class="icon fa fa-circle-o"></i>Forum</a></li>
           </ul>
         </li>';
 }
